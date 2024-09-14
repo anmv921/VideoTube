@@ -8,67 +8,76 @@
     <title>
         Submit Video
     </title>
+    <link rel="stylesheet" type="text/css" href="{{ url('/css/style.css') }}" />
 </head>
 
 <body>
-    <h1>
-        Submit video
-    </h1>
+
+    <main>
+
+        <h1>
+            Submit video
+        </h1>
     
-    <div>
-        <a href="{{ url('/') . '/videos' }}" >
-            &larr; Go back  
-        </a>
-    </div>
-    
-    <form action="/videos" method="POST" >
-        @csrf
         
-        <div>
-            <input type="text" name="title" id="title" placeholder="Video title">
-        </div>
+        <button class="button button4" >
+            <a href="{{ url('/') . '/videos' }}" >
+                &larr; Go back  
+            </a>
+        </button>
         
-        <div>
-            <input type="text" name="link" id="link" placeholder="Link">
-        </div>
-
-        <div>
-            <input type="text" name="view_count" id="view_count" placeholder="Views" >
-        </div>
-
-        <div>
-            <textarea id="description"
-             name="description"
-             placeholder="Description" ></textarea>
-        </div>
-
-        <div>
-            <select name="category_id" id="category_id" >
-                <option value="">
-                    --Category--
-                </option>
-                <option value="1">
-                    Music
-                </option>
-                <option value="2">
-                    Philosophy
-                </option>
-                <option value="3">
-                    TV
-                </option>
-                <option value="4">
-                    Documentary
-                </option>
-            </select>
-        </div>
-
-        <div>
-            <button type="submit">
-                Submit
-            </button>
-        </div>
+        <form action="/videos" method="POST" >
+            @csrf
+            
+            <div>
+                <input type="text" name="title" id="title" placeholder="Video title">
+            </div>
+            
+            <div>
+                <input type="text" name="link" id="link" placeholder="Link">
+            </div>
     
-    </form>
+            <div>
+                <input type="text" name="view_count" id="view_count" placeholder="Views" >
+            </div>
+    
+            <div>
+                <textarea id="description"
+                 name="description"
+                 placeholder="Description" ></textarea>
+            </div>
+    
+            <div>
+                <select name="category_id" id="category_id" >
+                    <option value="">
+                        --Category--
+                    </option>
+                    <option value="1">
+                        Music
+                    </option>
+                    <option value="2">
+                        Philosophy
+                    </option>
+                    <option value="3">
+                        TV
+                    </option>
+                    <option value="4">
+                        Documentary
+                    </option>
+                </select>
+            </div>
+    
+            <div>
+                <button type="submit" class="button button4" >
+                    Submit
+                </button>
+            </div>
+        
+        </form>
+    </main>
+
+
+    
 
 </body>
 </html>

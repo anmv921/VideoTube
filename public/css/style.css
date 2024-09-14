@@ -2,6 +2,10 @@
  * TABLE *
  *********/
 
+ h1 {
+  text-transform: uppercase;
+ }
+
 table {
     border-collapse: collapse;
     border: 2px solid rgb(140 140 140);
@@ -68,6 +72,8 @@ h4 {
 h1 {
   font-size: 2rem;
   margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 h2 {
@@ -125,3 +131,34 @@ main {
   justify-content: center;
   flex-direction: column;
 }
+
+/********
+* FORM *
+********/
+
+form div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+}
+
+form button {
+  width: 80px;
+}
+
+form input, textarea, select {
+  width: 200px;
+  border-radius: 0%;
+}
+
+form div {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+
+
+
