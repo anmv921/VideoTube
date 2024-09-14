@@ -230,11 +230,6 @@ form div {
 * DETAILS *
 ***********/
 
-/* .div-iframe {
-  border-radius: 10px;
-  overflow: hidden;
-} */
-
 details {
   border: 1px solid #aaa;
   border-radius: 4px;
@@ -244,10 +239,6 @@ summary {
   font-weight: bold;
   margin: -0.5em -0.5em 0;
   padding: 0.5em;
-}
-
-details[open] {
-  /* padding: 0.5em; */
 }
 
 details[open] summary {
@@ -273,9 +264,3 @@ details[open] summary {
   width: 420px;
 }
 
-.section-show-video button {
-  /* display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: auto; */
-}
