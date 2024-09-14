@@ -6,30 +6,30 @@
     content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Videos</title>
-    <link rel="stylesheet" 
-    type="text/css" href="{{ url('/css/style.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ url('/css/style.css') }}" />
 </head>
 <body>
     <main>
-        <h1>
+        <h1 class="h1-videos">
             Videos
         </h1>
 
-        <br>
+      
 
-        <button class="button button4">
+        <button class="button button-grey btn-open-submit-form">
             <a href="/video/create" >
                 Submit video &rarr;
             </a>
         </button>
 
-        <br>
-        <br>
+        
 
         <table>
+
             <caption>
                 Total videos: {{ $videos->count() }}
             </caption>
+
             <thead>
                 <tr>
                     <th scope="col">Title</th>

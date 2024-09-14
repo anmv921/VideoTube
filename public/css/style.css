@@ -1,19 +1,29 @@
 /*********
- * TABLE *
- *********/
+* TABLE *
+*********/
 
- h1 {
+h1 {
   text-transform: uppercase;
- }
+}
+
+.h1-create-video {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.h1-videos {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
 
 table {
-    border-collapse: collapse;
-    border: 2px solid rgb(140 140 140);
-    font-family: sans-serif;
-    font-size: 0.8rem;
-    letter-spacing: 1px;
-    width: 60%;
-    margin: auto;
+  border-collapse: collapse;
+  border: 2px solid rgb(140 140 140);
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  width: 60%;
+  margin: auto;
 }
 
 table a {
@@ -21,53 +31,50 @@ table a {
   color: black;
 }
 
-table a:hover {
+a:hover {
   text-decoration: underline;
 }
 
 caption {
-    caption-side: bottom;
-    padding: 10px;
-    font-weight: bold;
+  caption-side: bottom;
+  padding: 10px;
+  font-weight: bold;
 }
 
 thead,
 tfoot {
-    background-color: rgb(228 240 245);
+  background-color: rgb(228 240 245);
 }
 
 th,
 td {
-    border: 1px solid rgb(160 160 160);
-    padding: 8px 10px;
+  border: 1px solid rgb(160 160 160);
+  padding: 8px 10px;
 }
 
 td:last-of-type {
-    text-align: center;
+  text-align: center;
 }
 
 tbody > tr:nth-of-type(even) {
-    background-color: rgb(237 238 242);
+  background-color: rgb(237 238 242);
 }
 
 tfoot th {
-    text-align: right;
+  text-align: right;
 }
 
 tfoot td {
-    font-weight: bold;
+  font-weight: bold;
+}
+
+table caption {
+  padding: 30px;
 }
 
 /***********
- * HEADERS *
- ***********/
-
-
-h2,
-h3,
-h4 {
-  margin: 0.1rem 0;
-}
+* HEADERS *
+***********/
 
 h1 {
   font-size: 2rem;
@@ -78,7 +85,6 @@ h1 {
 
 h2 {
   font-size: 1.5rem;
-  padding-left: 20px;
 }
 
 h3 {
@@ -93,10 +99,9 @@ h4 {
 }
 
 /**********
- * BUTTON *
- **********/
- .button {
-  background-color: #04AA6D; /* Green */
+* BUTTON *
+**********/
+.button {
   border: none;
   color: white;
   padding: 15px 32px;
@@ -106,25 +111,81 @@ h4 {
   font-size: 16px;
   margin: auto;
   cursor: pointer;
-  width: 20%;
-
 }
 
-.button4 {
+.button-grey {
   background-color: #e7e7e7; 
   color: black;
-} /* Gray */ 
+  width: 204px;
+}
 
-.button4:hover {
+.btn-submit {
+  background-color: #04AA6D;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: black
+}
+
+.button-grey:hover {
   background-color: white;
   border-color: black;
   border: solid;
 }
 
-button a {
-  text-decoration: none;
-  color: black
+.btn-submit:hover {
+  background-color: white;
+  border-color: #04AA6D;
+  border: solid;
+  color: #04AA6D;
+  text-decoration: underline;
 }
+
+.btn-open-submit-form {
+  margin-top: 0px;
+  margin-bottom: 30px;
+
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.btn-open-submit-form:hover {
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border: black solid 2px;
+}
+
+.btn-back {
+  width: 204px;
+
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.btn-back:hover {
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border: black solid 2px;
+}
+
+button:active { 
+  transform: scale(0.98);
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24); 
+} 
+
+/********
+* MAIN *
+********/
 
 main {
   display: flex;
@@ -145,20 +206,76 @@ form div {
 }
 
 form button {
-  width: 80px;
+  width: 204px;
 }
 
 form input, textarea, select {
   width: 200px;
-  border-radius: 0%;
+}
+
+form select {
+  width: 202px;
+}
+
+form input {
+  padding: 0;
 }
 
 form div {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
+/***********
+* DETAILS *
+***********/
 
+/* .div-iframe {
+  border-radius: 10px;
+  overflow: hidden;
+} */
 
+details {
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
 
+summary {
+  font-weight: bold;
+  margin: -0.5em -0.5em 0;
+  padding: 0.5em;
+}
 
+details[open] {
+  /* padding: 0.5em; */
+}
+
+details[open] summary {
+  border-bottom: 1px solid #aaa;
+  margin: 0em 0em 0;
+  margin-bottom: 0.5em;
+}
+
+.section-show-video h2 {
+  max-width: 420px;
+}
+
+.section-show-video details {
+  width: 420px;
+}
+
+.section-show-video iframe {
+  padding: 0.667px;
+  border: none;
+}
+
+.section-show-video hr {
+  width: 420px;
+}
+
+.section-show-video button {
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto; */
+}

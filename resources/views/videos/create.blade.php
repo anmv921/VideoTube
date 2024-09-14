@@ -15,12 +15,12 @@
 
     <main>
 
-        <h1>
+        <h1 class="h1-create-video">
             Submit video
         </h1>
     
         
-        <button class="button button4" >
+        <button class="button button-grey btn-back" >
             <a href="{{ url('/') . '/videos' }}" >
                 &larr; Go back  
             </a>
@@ -68,7 +68,7 @@
             </div>
     
             <div>
-                <button type="submit" class="button button4" >
+                <button type="submit" class="button button-grey btn-submit" >
                     Submit
                 </button>
             </div>

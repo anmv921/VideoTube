@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Video;
 use Illuminate\Http\Request;
+use App\Models\Category;
 
 class VideoController extends Controller
 {
@@ -48,11 +49,15 @@ class VideoController extends Controller
      */
     public function show(Video $video)
     {
+
+        $category = Category::where('id', $video->category_id)->get()[0]->name;
+
         $youtubeId = explode('?v=', $video->link)[1];
         return view('videos.show')->with([
             'video' => $video,
             'youtubeId' => $youtubeId,
-            'youtubeEmbedURL' => env('YOUTUBE_EMBED_URL')
+            'youtubeEmbedURL' => env('YOUTUBE_EMBED_URL'),
+            'category' => $category
         ]);
     }
 

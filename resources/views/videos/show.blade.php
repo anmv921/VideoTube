@@ -6,30 +6,56 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{ $video->title }}</title>
 
-    <link rel="stylesheet" 
-    type="text/css" href="{{ url('/css/style.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ url('/css/style.css') }}" />
 </head>
 <body>
-    <h1>
-        {{ $video->title }}
-    </h1>
-    
-    <div>
-        <a href="/videos/" >
-            &larr; Voltar 
-        </a>
-    </div>
-    
-    <iframe width="420" height="315"
-    src="{{ $youtubeEmbedURL }}{{$youtubeId}}"
-    >
-    </iframe>
-    
-    <ul>
-        <li>View count - {{ $video->view_count }}</li>
-        <li>Description - {{ $video->description }}</li>
-        <li>Category id - {{ $video->category_id }}</li>
-    </ul>
+
+    <main>
+
+        <section class="section-show-video">
+            <div>
+                <h2>
+                    {{ $video->title }}
+                </h2>
+            </div>
+            
+            <div class="div-iframe">
+                <iframe width="420" height="315"
+                src="{{ $youtubeEmbedURL }}{{$youtubeId}}" >
+                </iframe>
+            </div>
+            
+            <div>
+
+                <details>
+                    <summary>{{ $video->view_count }} views</summary>
+
+
+                    <div>
+                        {{ $video->description }}
+                    </div>
+
+                    <hr>
+
+                    <div>
+                        {{ $category  }}
+
+                    </div>
+
+                </details>
+                  
+            </div>
+
+            <div>
+                <a href="/videos/" >
+                    &larr; Voltar 
+                </a>
+            </div>
+            
+        </section>
+
+    </main>
+
 </body>
 </html>
 
