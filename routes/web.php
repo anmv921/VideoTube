@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\VideoController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -18,3 +19,13 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
+
+Route::get('/videos', [VideoController::class, 'index'])->name('videos.index');
+
+Route::get('/videos/{video}', [VideoController::class, 'show'])->name('videos.show');
+
+Route::get('/video/create', [VideoController::class, 'create'])->name('videos.create');
+
+Route::post('/videos', [VideoController::class, 'store'])->name('videos.store');
+
+

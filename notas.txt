@@ -1,0 +1,16 @@
+npm run dev
+for the starter kit - breeze
+
+INSERT INTO 
+`videos`
+	(`title`,
+    `filename`, 
+    `view_count`, 
+    `description`,
+    `category_id`) 
+VALUES 
+    ('metin 2 soundtrack-enter the east',
+     'https://www.youtube.com/watch?v=bn1YCClRF-g',
+	6.900000,
+    'metin 2 soundtrack',
+    1)

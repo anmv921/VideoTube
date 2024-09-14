@@ -1,0 +1,127 @@
+/*********
+ * TABLE *
+ *********/
+
+table {
+    border-collapse: collapse;
+    border: 2px solid rgb(140 140 140);
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    width: 60%;
+    margin: auto;
+}
+
+table a {
+  text-decoration: none;
+  color: black;
+}
+
+table a:hover {
+  text-decoration: underline;
+}
+
+caption {
+    caption-side: bottom;
+    padding: 10px;
+    font-weight: bold;
+}
+
+thead,
+tfoot {
+    background-color: rgb(228 240 245);
+}
+
+th,
+td {
+    border: 1px solid rgb(160 160 160);
+    padding: 8px 10px;
+}
+
+td:last-of-type {
+    text-align: center;
+}
+
+tbody > tr:nth-of-type(even) {
+    background-color: rgb(237 238 242);
+}
+
+tfoot th {
+    text-align: right;
+}
+
+tfoot td {
+    font-weight: bold;
+}
+
+/***********
+ * HEADERS *
+ ***********/
+
+
+h2,
+h3,
+h4 {
+  margin: 0.1rem 0;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: auto;
+}
+
+h2 {
+  font-size: 1.5rem;
+  padding-left: 20px;
+}
+
+h3 {
+  font-size: 1.2rem;
+  padding-left: 40px;
+}
+
+h4 {
+  font-size: 1rem;
+  font-style: italic;
+  padding-left: 60px;
+}
+
+/**********
+ * BUTTON *
+ **********/
+ .button {
+  background-color: #04AA6D; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: auto;
+  cursor: pointer;
+  width: 20%;
+
+}
+
+.button4 {
+  background-color: #e7e7e7; 
+  color: black;
+} /* Gray */ 
+
+.button4:hover {
+  background-color: white;
+  border-color: black;
+  border: solid;
+}
+
+button a {
+  text-decoration: none;
+  color: black
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
