@@ -31,15 +31,14 @@
                     <summary>{{ $video->view_count }} views</summary>
 
 
-                    <div>
+                    <div class="div-description" >
                         {{ $video->description }}
                     </div>
 
                     <hr>
 
                     <div>
-                        {{ $category  }}
-
+                        {{ $video->category->name  }}
                     </div>
 
                 </details>

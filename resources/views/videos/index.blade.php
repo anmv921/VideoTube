@@ -51,7 +51,7 @@
                             {{ $video->view_count }}
                         </td>
                         <td>
-                            {{ $video->category_id }}
+                            {{  $video->category->name }}
                         </td>
                         <td>
                             {{ $video->id_user }}

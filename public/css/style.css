@@ -237,13 +237,13 @@ details {
 
 summary {
   font-weight: bold;
-  margin: -0.5em -0.5em 0;
+  margin: 0em 0em 0em;
   padding: 0.5em;
 }
 
 details[open] summary {
   border-bottom: 1px solid #aaa;
-  margin: 0em 0em 0;
+  margin: 0em 0em 0em;
   margin-bottom: 0.5em;
 }
 
@@ -264,3 +264,6 @@ details[open] summary {
   width: 420px;
 }
 
+.div-description {
+  padding: 8px;
+}
