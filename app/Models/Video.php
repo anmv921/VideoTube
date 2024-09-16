@@ -21,7 +21,7 @@ class Video extends Model
         "description",
         "category_id",
         "id_youtube",
-        "id_user"
+        "user_id"
     ];
 
     public function category(): BelongsTo
@@ -29,12 +29,10 @@ class Video extends Model
         return $this->belongsTo(Category::class);
     }
 
-    public function user() {
+    public function user(): BelongsTo {
         return $this->belongsTo( User::class );
     }
 
-    public function video() {
-        return $this->hasMany( Video::class )->orderBy("created_at", "DESC");
-    }
+ 
        
 }

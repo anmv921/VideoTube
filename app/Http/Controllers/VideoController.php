@@ -5,9 +5,13 @@ namespace App\Http\Controllers;
 use App\Models\Video;
 use Illuminate\Http\Request;
 use App\Models\Category;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Route;
 
 class VideoController extends Controller
 {
+
+
     /**
      * Display a listing of the resource.
      */
@@ -21,7 +25,7 @@ class VideoController extends Controller
      */
     public function create()
     {
-        return view('videos.create');
+        return view('videos.create', ["categories" => Category::all()]);
     }
 
     /**
@@ -39,7 +43,7 @@ class VideoController extends Controller
             'description' => $request->input('description'),
             'category_id' => $request->input('category_id'),
             'id_youtube' => $youtubeId,
-            'id_user' => 0
+            'user_id' => Auth::id()
         ]);
         return redirect()->route('videos.index');
     }

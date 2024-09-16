@@ -24,7 +24,9 @@ Route::get('/videos', [VideoController::class, 'index'])->name('videos.index');
 
 Route::get('/videos/{video}', [VideoController::class, 'show'])->name('videos.show');
 
-Route::get('/video/create', [VideoController::class, 'create'])->name('videos.create');
+Route::get('/video/create', [VideoController::class, 'create'])
+    ->name('videos.create')
+    ->middleware('auth');
 
 Route::post('/videos', [VideoController::class, 'store'])->name('videos.store');
 

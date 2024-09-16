@@ -39,7 +39,7 @@ return new class extends Migration
                 ->references('id')
                 ->on('categories');
             
-            $table->foreign('id_user')
+            $table->foreign('user_id')
                 ->references('id')
                 ->on('users');
         });
