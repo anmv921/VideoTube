@@ -278,3 +278,16 @@ details[open] summary {
 .div-description {
   padding: 8px;
 }
+
+/**********
+ * HEADER *
+ **********/
+
+.nav-auth {
+  display: flex;
+  justify-content: end;
+}
+
+.nav-auth a {
+  margin-left: 10px;
+}
